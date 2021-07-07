@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <header>
-        <nav id="navbar">
-            <ul>
-                <li>
-                    <a class="nav-link" href="#projects">My work</a>
+        <nav class="navbar" id="navbar">
+            <ul class="list">
+                <li class="list-item">
+                    <a class="nav-link" href="#projects">My projects</a>
                 </li>
-                <li>
+                <li class="list-item">
                     <a class="nav-link" href="#contacts">My contacts</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="welcome-section"><h1>Welcome</h1></section>
-        <section id="projects">
-            <div class="project-tile"><a href="https://voidbeary.github.io/product-landing-page/">Landing page</a></div>
+        <section id="welcome-section">
+            <h1 class="main-heading">Welcome</h1>
+            <h2 class="subheading">Its a me mario</h2>
         </section>
-        <section id="contacts">booob</section>
+        <section class="projects" id="projects">
+            <h3 class="heading">My projects</h3>
+            <div class="all-project-tiles">
+                <a href="https://voidbeary.github.io/product-landing-page/" aria-label="landing page">
+                    <div class="project-tile">
+                        <img class="tile-img" src="./src/landing-page.png" alt="landing page with background of donuts and email submit form">
+                            <h4 class="tile-name">Landing page</h4>
+                    </div>
+                </a>
+                <a href="https://voidbeary.github.io/product-landing-page/" aria-label="survey form">
+                    <div class="project-tile">
+                        <img class="tile-img" src="./src/survey.png" alt="Survey form with few questions and orange background">
+                        <h4 class="tile-name">Survey form</h4>
+                    </div>
+                </a>
+                <a href="https://voidbeary.github.io/product-landing-page/" aria-label="documentation page">
+                    <div class="project-tile">
+                        <img class="tile-img" src="./src/documentation.png" alt="Technical documentation page about HTML tag a">
+                        <h4 class="tile-name">Documentation</h4>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
-    <footer><a id="profile-link" href="https://github.com/voidbeary" target="_blank">github</a></footer>
+    <footer class="footer">
+        <section id="contacts">
+            <h3 class="heading">My contact info</h3>
+            <div class="links">
+            <a id="profile-link" href="https://github.com/voidbeary" target="_blank">
+                <img class=linkImg  src="./src/github.png" alt="Logo of Github">
+            </a>
+            <a id="linkedIn-link" href="https://www.linkedin.com/in/justina-andrulionyt%C4%97/" target="_blank">
+                <img class=linkImg  src="./src/linkedIn.png" alt="Logo of LinkedIn">
+            </a>
+        </div>
+        </section>
+     </footer>
 </body>
+
 </html>

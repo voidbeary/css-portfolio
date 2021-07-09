@@ -69,23 +69,26 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 .project-tile {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2vh;
-  width: 420px;
-  height: 300px;
+  height: 100%;
   box-shadow: 0px 9px 20px #fff4d4;
   border-radius: 8px;
+  width: 30%;
+  margin: 2vh;
+  text-decoration: none;
 }
 .project-tile:hover{
   box-shadow: 0px 9px 20px #ffdd76;
+  text-decoration: underline;
 }
 .tile-img {
-  width: 420px;
-  height: 201px;
+  width: 100%;
+  height: auto;
   display: flex;
   border-radius: 8px 8px 0px 0px;
 }
@@ -110,16 +113,17 @@ body {
   justify-content: center;
 }
 .linkImg{
+  height: 100%;
+}
+.profile-link{
   height: 64px;
   margin: 0 2vh 3vh;
 }
-.project-link{
-  text-decoration: none;
+
+@media (max-width: 1100px ) {
+  .project-link{
+    width: 90%;
+    margin: 0;
+    margin-bottom: 2em;
+  }
 }
-.project-link:hover{
-  text-decoration: underline;
-}
-@media only screen and (max-width: 1100px) {
-  .all-project-tiles {
-    flex-direction: column;
-  }}
